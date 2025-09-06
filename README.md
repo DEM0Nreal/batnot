@@ -22,8 +22,14 @@ All logs are in `.batnot.log` file.
 
 Default update time is set to 30 seconds.
 
+## dependencies
+- `notify-send`
+  
+you can easily change function `notification_send()` to use any other way to send notifications.
+
 # How to stop batnot:
 Send signal **SIGTERM** to the process, PID (Process ID) can be found in `.batnot.pid` file.
+
 
 # Compilation
 ```
