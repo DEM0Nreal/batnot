@@ -270,7 +270,7 @@ int main(void){
             }
 
             // makes sure it doesn't spam notifications
-            if (smallest >= batLevel && smallest != prevBatLevel){
+            if (smallest <= 100 && smallest >= batLevel && smallest != prevBatLevel){
                 prevBatLevel = batLevel;
                 int urgency = 1;
                 if (smallest == smallest_discharging_point) urgency = 2;
